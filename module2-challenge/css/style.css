@@ -4,7 +4,7 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     border: 5px solid navy;
     padding-top: 45px;
     padding: 10px;
@@ -12,22 +12,18 @@
     color: azure;
     font-family: Arial;
     font-size: 30px;
+    justify-content: space-between;
+    align-content: flex-start;
 }
 
 .header-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border: 5px solid navy;
-    padding-top: 20px;
-    padding: 20px;
     background: darkblue;
     color: azure;
 }
 
 .header-nav-li {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     padding-top: 20px;
     padding: 10px;
     margin-top: 30px;
@@ -45,14 +41,14 @@ img {
     margin: 5px;
 }
 
-.room {
+.about {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     border: 5px solid navy;
     background-color: lightblue;
     margin: 5px;
     width: 250px;
-    height: 400px;
+    height: 500px;
     text-align: center;
     padding-top: 140px;
     box-sizing: border-box;
@@ -61,20 +57,21 @@ img {
     font-size: 60px;
 }
 
-.p {
-    float: left;
+.p-main {
     display: flex;
+    flex-direction: column;
     border: 5px solid navy;
     background-color: white;
     margin: 5px;
     width: 500px;
-    height: 150px;
+    height: 300px;
 
 }
 
-.room2 {
-    clear: left;
+.work {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     flex-wrap: wrap;
     border: 5px solid navy;
     background-color: lightblue;
@@ -91,7 +88,8 @@ img {
 
 .card {
     display: flex;
-    flex: 0 0 200px;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 40px;
     text-align: center;
     background: rgb(7, 7, 187);
